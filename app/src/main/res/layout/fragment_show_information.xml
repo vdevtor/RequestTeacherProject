@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="155dp"
+    android:layout_height="300dp"
+    android:layout_marginLeft="32dp"
+    android:layout_marginRight="32dp"
+    android:id="@+id/fragmentoFinal"
+    app:cardCornerRadius="33dp"
+    android:background="@color/maindark"
+    app:cardBackgroundColor="@color/maindark"
+    tools:context=".View.Fragment.ShowInformationFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/ivMainItemAvatarFinal"
+            android:layout_width="match_parent"
+            android:layout_height="182dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/maindark"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/whatsapp"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="9dp"/>
+
+            <TextView
+                android:id="@+id/whatsupnick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="10dp"
+                android:text="(11) 965234875"
+                android:textStyle="bold"
+                android:textColor="@color/mainOrange"/>
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/instagram"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="12dp"/>
+
+            <TextView
+                android:id="@+id/instagramNick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="10dp"
+                android:text="vdevtor"
+                android:textStyle="bold"
+                android:textColor="@color/mainOrange"/>
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@color/maindark">
+
+
+                <TextView
+                    android:id="@+id/localidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/mainGray"
+                    android:textStyle="bold"
+                    android:text="Brasil - São Paulo - Sp"/>
+            </LinearLayout>
+
+        <ImageView
+            android:id="@+id/closebtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="163dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_sharp_close_24"/>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

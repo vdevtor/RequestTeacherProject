@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/maindark"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    tools:context=".View.Activity.TelaLoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="114dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilEmailLogin"
+        android:layout_margin="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="E-mail"
+        app:boxStrokeColor="@color/mainOrange"
+        app:helperText="coloque aqui seu emial"
+        app:helperTextTextColor="@color/mainYellow"
+        app:hintTextColor="@color/mainOrange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/teEmailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textSize="17sp"
+            android:textColor="@color/mainOrange"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilSenhaLogin"
+            android:layout_margin="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Senha"
+            app:boxStrokeColor="@color/mainOrange"
+            app:helperText="coloque aqui seu emial"
+            app:helperTextTextColor="@color/mainYellow"
+            app:hintTextColor="@color/mainOrange"
+            app:layout_constraintStart_toStartOf="@id/tilEmailLogin"
+            app:layout_constraintEnd_toEndOf="@id/tilEmailLogin"
+            app:layout_constraintTop_toBottomOf="@id/tilEmailLogin">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/teSenhaLogin"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/mainOrange"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginLeft="42dp"
+        android:elevation="8dp"
+        android:textColor="@color/mainYellow"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:background="@drawable/custom_registrar_botao"
+        android:text="Login"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:textColor="@color/white"
+        android:text="Ainda não tem cadastro?\nFaça agora mesmo"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginLeft="42dp"
+        android:fontFamily="cursive"
+        android:textColor="@color/mainYellow"
+        android:textStyle="bold"
+        android:textSize="34dp"
+        android:textAllCaps="false"
+        android:background="@color/maindark"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="Registre-se"
+
+        />
+
+
+
+
+</LinearLayout>

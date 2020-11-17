@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/containerCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="18dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="18dp"
+    android:layout_marginBottom="10dp"
+    android:background="@color/maindark"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ajusta"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/maindark">
+
+        <ImageView
+            android:id="@+id/ivMainItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/mainYellow"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher_foreground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivMainItemAvatar"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+
+            android:src="@drawable/ic_launcher_foreground"
+
+            app:layout_constraintStart_toStartOf="@id/ajusta"
+            app:layout_constraintTop_toTopOf="@id/ajusta" />
+
+
+        <TextView
+            app:layout_constraintTop_toTopOf="@id/ivMainItemAvatar"
+            app:layout_constraintStart_toEndOf="@id/ivMainItemAvatar"
+
+            android:id="@+id/nomeMainemenu"
+            android:layout_marginTop="69dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:layout_marginRight="5dp"
+            android:elevation="5dp"
+            android:maxWidth="200dp"
+            android:maxLength="25"
+            android:text="Vanessa Cristina"
+            android:textColor="@color/mainGray"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/tvEspecialidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="6dp"
+            android:elevation="3dp"
+            android:text="Java Script"
+            android:textColor="@color/mainOrange"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/nomeMainemenu"
+            app:layout_constraintTop_toBottomOf="@id/nomeMainemenu" />
+
+        <ImageView
+            android:id="@+id/expandbtn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/sharp_expand_more_24"
+           android:elevation="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivMainItemAvatar"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:background="@color/mainYellow"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/expande"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/tvEspecialidade">
+
+
+            <ImageView
+                android:id="@+id/expandbtn2"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="39dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/sharp_expand_more_24"
+                android:elevation="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descrição: "
+                android:textStyle="bold"
+                android:textColor="@color/mainOrange"
+                android:layout_marginLeft="3dp"
+                android:textSize="15sp"/>
+
+
+            <TextView
+                android:id="@+id/getfullinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Professor renomado, cursando doutorado fora do pais com sonho de lecionar em mais  uma lingua"
+                android:textStyle="bold"
+                android:layout_marginTop="1dp"
+                android:textColor="@color/mainGray"
+                android:layout_marginLeft="0dp"
+                android:textSize="15sp"/>
+
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>
